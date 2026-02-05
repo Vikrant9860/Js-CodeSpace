@@ -71,3 +71,5 @@ console.log(+false) // 0    it will convert but for just knowing or myy learning
 let num = 34
 num++
 console.log(num)  // 35
+
+//postfix and prefix operations are same as the preincrement and postincrement in java
