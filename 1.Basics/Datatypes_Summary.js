@@ -59,4 +59,5 @@ console.log(heroes);
   
   console.log(typeof Array)  // function 
   console.log(typeof Object)   // function 
-  console.log(typeof function(){})  // function this is not the way to check just did
+  console.log(typeof function(){})  // function object 
+   // function this is not the way to check just assign a function first then check its type 
