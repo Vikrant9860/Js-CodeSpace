@@ -61,4 +61,40 @@ console.log(heroes);
   console.log(typeof Array)  // function 
   console.log(typeof Object)   // function 
   console.log(typeof function(){})  // function object 
-// function this is not the way to check just assign a function first then check its type 
+// function this is not the way to check just assign a function first then check its 
+
+
+//*******************x**************//
+
+// * Stack - All the primitive type of the datatype are in the Stack
+// In the stack whenever you will take something you will get copy of it 
+  
+ let myNumber = 9756544432
+ let newNumber = myNumber    // beacause its getting the copy of the Mynumber 
+ newNumber = 9860444344             // not the actual number .. 
+
+ console.log(newNumber); // 9860444344
+ console.log(myNumber);  // 9756544432
+ 
+
+// * Heap - All the non-primitive type of the datatype goes in the Heap
+// In the heap you get the actual reference  
+
+let userOne = {
+   userName : "Vikrant",
+   adress : "Amravati"
+}
+
+let userTwo = {
+    userName : "Viky",
+    adress : "pune"
+
+}
+
+userOne = userTwo
+
+console.log(userOne);    // userTwo
+console.log(userTwo);   // userTwo
+
+//beacause its have referece in the heap memory which changed it that why 
+// both the outputs are same
