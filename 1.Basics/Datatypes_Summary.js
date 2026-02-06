@@ -2,7 +2,8 @@
 //how they access the data Based on this the datatypes are classified as follows
 
 // 1. #Primitive Datatypes  - 7 types with their examples
- String = "Vikrant"
+
+ String
  Number 
  Boolean
  null  // its empty not 0 , not empty String
@@ -60,4 +61,4 @@ console.log(heroes);
   console.log(typeof Array)  // function 
   console.log(typeof Object)   // function 
   console.log(typeof function(){})  // function object 
-   // function this is not the way to check just assign a function first then check its type 
+// function this is not the way to check just assign a function first then check its type 
