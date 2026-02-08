@@ -57,10 +57,11 @@ const name = new String('Vikrant More')
 
 const fruit = "Apple"
 
-console.log(`name of the fruit is ${fruit}`)
+//console.log(`name of the fruit is ${fruit}`)
 
 // ADD SOME REMAINING METHOD BY RUNNING IT ON THE BROWSER CONSOLE 
   
+
 
 
 
