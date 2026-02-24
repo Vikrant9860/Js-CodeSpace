@@ -27,13 +27,15 @@
 
 myArr.push(7)         // it will push the elment in the array at the last position 
 myArr.push(8)  // [ 1, 2, 3, 4, 5, 6, 7, 8]
-myArr.pop(8)   // simply last element in the array will be removed 
-myArr.pop(7)   // [ 1, 2, 3, 4, 5, 6] here the 7 is the element not the index
+
+myArr.pop()   // simply last element in the array will be removed 
+myArr.pop(7)   // [ 1, 2, 3, 4, 5, 6] here the 7 is the element not an index
  
 
  myArr.unshift(9) // 9 will be at the starting of the array but this method is not optimized 
- myArr.shift(9)   // it will remove the first element in the array 
 
+ myArr.shift(9)   // it will remove the first element in the array 
+ 
  console.log(myArr.includes(9));   // false this method gives the boolean result 
  console.log(myArr.indexOf(9))   // -1 because the 9 is not present in the array -> gives index of el 
  
@@ -53,7 +55,7 @@ myArr.pop(7)   // [ 1, 2, 3, 4, 5, 6] here the 7 is the element not the index
 
  // Splice
 
- console.log(myArr.splice(1,3));  // [ 2, 3, 4 ]      last element is included here
+ console.log(myArr.splice(1,3));  // [ 2, 3, 4 ]      last index is included here
  console.log("C" , myArr);  //    C [ 1, 5, 6 ]
 
  // After the Splice operation the Original Array changed but not after Slice 
@@ -67,4 +69,10 @@ myArr.pop(7)   // [ 1, 2, 3, 4, 5, 6] here the 7 is the element not the index
   
  
 
+ const Arr = new Array(1,2,3,5);
+ Arr.shift()          // removes the starting element
+ console.log(Arr);      // 1 got removed from the array
+
+ console.log('v',Arr);
+ 
  

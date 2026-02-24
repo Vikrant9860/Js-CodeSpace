@@ -28,14 +28,14 @@ const mixNums = [1,2,3,4,[[5,6,7],8,9]]
 // Now we want to make it all in the one array not like this mixed up
 
 const mixPrintN = mixNums.flat(3)   // have to give the depth in the bracket to open it 
-// we can also give the Infinity here in the bracket 
+// we can also give the Infinity here in the bracket // but prefer to give how much in ex
 console.log(mixPrintN); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
-console.log(Array.isArray("Vikrant"))  // false for checking its array or not
+console.log(Array.isArray("Vikrant"))  // false  checking its array or not
 
 console.log(Array.from("Vikrant"))  // makes the new  array from the input given
-//  like this ['V', 'i', 'k','r', 'a', 'n','t']
+//  like this ['V', 'i', 'k','r', 'a', 'n','t'] 
 
 
 console.log(Array.from({name : "Vikrant"}));   // []     INTERESTING 
@@ -58,3 +58,16 @@ console.log(Array.of(5));  // [5]
 console.log(Array(5));    // [ <5 empty items> ]       beacause Array contain nothing 
 
 console.log(Array.isArray([]));         // true 
+
+
+ const boys = ["viky","ram","Saurabh","rishi"]
+ const girls =["pooja","shravani","Kajal"]
+
+// const friends = boys.concat(girls)
+// console.log(friends);
+
+const friends = [...boys,...girls]
+console.log(friends);
+
+
+
