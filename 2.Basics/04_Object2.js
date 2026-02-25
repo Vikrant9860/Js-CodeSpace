@@ -92,3 +92,34 @@ console.log(Object.entries(obj));
 
 
 // checkout some more methods of the object by checking on the console 
+
+// De- structuring of the objects 
+
+const student = {
+    name : "Viky",
+    age : 20,
+    course : "BE"
+}
+
+const {name,age,course : degree} = student
+console.log(name,age);      // this is how we can destructure the object 
+// we can also rename them
+console.log(degree);      // BE because we renamed the course above as the degree
+
+
+// 🔹 What is JSON?
+//JSON stands for JavaScript Object Notation.
+//It is a data format used to store and send data between systems (like between a server and a browser)
+//It looks very similar to a JavaScript object, but it is actually just text.
+
+// {
+//   "name": "Viky",
+//   "age": 20,
+//   "isStudent": true
+// }                            // its completely right in json the keys are in double quotes 
+
+// 🔹 What is an API?
+
+// API stands for Application Programming Interface.
+// API = messenger
+// JSON = message format
