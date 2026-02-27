@@ -5,8 +5,9 @@ function viky(){
 console.log("Vikrant More");
 console.log("From Amravati,Maharashtra");
 }
-
-viky()
+                                    //  Vikrant More
+                                    // From Amravati,Maharashtra
+viky()     
 // here above the viky is reference of function and            🔹 IMP
 //  if we want to execute then () this is execute 
 
@@ -47,7 +48,7 @@ function userLoginMessage(username = "Viky"){        // = "Viky" default value
         return                 // so that it will not execute the below things 
     }
 
-   return `${username} just logged in`
+   return `${username} just logged in`             // String interpolation
 }
 // userLoginMessage("Vikrant")           🔹 nothing will print
 console.log(userLoginMessage("Viky"));   // Viky just logged in
@@ -62,9 +63,68 @@ console.log(userLoginMessage());         // undefined just logged in
  // function userLoginMessage(username = "Viky"){
  // if user entered the username default username will be override and if not then Viky will printed
 
-function myfunction(){
-    let age = 22;
-}
-console.log(age);    // error because scope of the age was till the function block only 
+// function myfunction(){
+//     let age = 22;
+// }
+// console.log(age);    // error because scope of the age was till the function block only 
 
  
+function calculateCartValue(...value){   //... rest operator now it will take n arguments
+    return value;
+}
+// console.log(calculateCartValue(230))        // 230
+console.log(calculateCartValue(44,343,455,5345));       // [ 44, 343, 455, 5345 ]
+// it will add those values in the array
+
+
+// but if user is adding multiple no of values in the cart then we will use the 
+//  🔹 Rest operator (...value)
+// (...) this is also the spread operator 
+// but it depends on the usecase whether to call it as spread or rest we will see further
+
+// Suppose we did like this 
+
+function addtocart(value1,value2,...num1){
+    return num1;
+}
+console.log(addtocart(240,512,254,545));     // [ 254, 545 ]
+// because value1 -240, value2 -512  and we returning only the num1
+
+// Now how to pass a object values to the function
+
+const user  = {
+    name : "Viky",
+    native : "Amravati",
+    age :22
+}
+
+function handleUser(anyObject){
+    console.log(`Username is ${anyObject.name} , native is ${anyObject.native}
+         and his age is ${anyObject.age} `);   
+}
+//handleUser(user)     // Username is Viky , native is Amravati and his age is 22 
+
+// but the Object we are passing must have keys name , native and age
+//   if it was ages in the Object we are passing it would have given their the undefined
+
+// we can also directly pass the object there like without creating it seperately
+
+handleUser({
+    name : "Vikrant",
+    age  : 22,
+    native : "Pune"       // Username is Vikrant , native is Pune and his age is 22 
+})
+        
+
+// How to pass the array in the function 
+
+const newArray = [32,35,323,5334]
+
+function getSecondVal(getArray){
+    return getArray[1]; 
+}
+
+console.log(getSecondVal(newArray))   // 35
+// we can also passs the array direct here also
+
+console.log(getSecondVal([233,200,300])); // 200
