@@ -128,3 +128,5 @@ console.log(getSecondVal(newArray))   // 35
 // we can also passs the array direct here also
 
 console.log(getSecondVal([233,200,300])); // 200
+
+// we will see the scope soon 
