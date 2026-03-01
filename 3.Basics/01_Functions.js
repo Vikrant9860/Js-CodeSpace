@@ -160,4 +160,8 @@ return num2,num1;   // IMP Point
  const {name,...details} = obj   // this is how we can destructure it using the rest operator 
  console.log(name);    //Vikrant
  console.log(details);  // { age: 23, place: 'Amaravti' }
+
+ // rest operator collect values 
+ // spread operator spreads the vslue both look same but are different 
+ // we will see it further 
  
